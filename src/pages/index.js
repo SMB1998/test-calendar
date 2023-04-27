@@ -1,4 +1,4 @@
-import { UsersTable } from '@/components/ui'
+
 import MainLayout from '../components/layouts/MainLayout'
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -12,7 +12,7 @@ export default function Home() {
    
     <MainLayout>
       <main className="flex flex-col items-center min-h-screen p-10">
-        <UsersTable/>
+        
         <FullCalendar
         plugins={[dayGridPlugin, interactionPlugin, iCalendarPlugin]}
 
