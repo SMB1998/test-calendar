@@ -30,9 +30,9 @@ export const UsersTable = () => {
         </h2>
 
         
-    <input type="text" class="rounded focus:bg-slate-200 border m-2" placeholder="Nombre" />
-    <input type="text" class="rounded focus:bg-slate-200 border m-2" placeholder="Edad" />
-    <input type="text" class="rounded focus:bg-slate-200 border m-2" placeholder="Email" />
+    <input type="text" className="m-2 border rounded focus:bg-slate-200" placeholder="Nombre" />
+    <input type="text" className="m-2 border rounded focus:bg-slate-200" placeholder="Edad" />
+    <input type="text" className="m-2 border rounded focus:bg-slate-200" placeholder="Email" />
                 
 
       <table className="table-auto">
@@ -49,12 +49,12 @@ export const UsersTable = () => {
         <tbody>
           {usersList.slice(startIndex, endIndex).map(user => (
             <tr>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.firstName}</td>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.lastName}</td>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.maidenName}</td>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.email}</td>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.age}</td>
-              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.gender}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName + "1"}>{user.firstName}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "2"}>{user.lastName}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "3"}>{user.maidenName}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "4"}>{user.email}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "5"}>{user.age}</td>
+              <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "6"}>{user.gender}</td>
             </tr>
           ))}
         </tbody>
