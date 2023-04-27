@@ -49,12 +49,12 @@ export const UsersTable = () => {
         <tbody>
           {usersList.slice(startIndex, endIndex).map(user => (
             <tr>
-              <td className="px-4 py-2 border" >{user.firstName}</td>
-              <td className="px-4 py-2 border">{user.lastName}</td>
-              <td className="px-4 py-2 border">{user.maidenName}</td>
-              <td className="px-4 py-2 border">{user.email}</td>
-              <td className="px-4 py-2 border">{user.age}</td>
-              <td className="px-4 py-2 border">{user.gender}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.firstName}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.lastName}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.maidenName}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.email}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.age}</td>
+              <td className="px-4 py-2 border" key={iser.firstName + user.lastName}>{user.gender}</td>
             </tr>
           ))}
         </tbody>
