@@ -48,7 +48,7 @@ export const UsersTable = () => {
         </thead>
         <tbody>
           {usersList.slice(startIndex, endIndex).map(user => (
-            <tr>
+            <tr key={user}>
               <td className="px-4 py-2 border" key={user.firstName + user.lastName + "1"}>{user.firstName}</td>
               <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "2"}>{user.lastName}</td>
               <td className="px-4 py-2 border" key={user.firstName + user.lastName+ "3"}>{user.maidenName}</td>
